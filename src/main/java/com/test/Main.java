@@ -35,5 +35,8 @@ public class Main {
         get("/getWriteOffAmount",new WriteOffAmount());
 
         get("/getTotalRevenueAmount",new TotalRevenueAmount());
+
+        get("/getCustomerNumbers",new CustomerNumbers(),new JsonTransformer());
+
     }
 }
