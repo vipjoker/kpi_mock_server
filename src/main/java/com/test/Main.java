@@ -30,6 +30,8 @@ public class Main {
 
         get("/getCustomerNumber",new CustomerNumber(), new JsonTransformer());
 
+        get("/getCustomerNumbersForBusinessHourRanges",new CustomerNumberForBusinesHour(), new JsonTransformer());
+
         get("/getWriteOffAmount",new WriteOffAmount());
 
         get("/getTotalRevenueAmount",new TotalRevenueAmount());
