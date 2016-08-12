@@ -18,7 +18,7 @@ public class CustomerNumbers implements Route {
             LineChartModel[] array  = new LineChartModel[arrayLength];
             long currentDate = System.currentTimeMillis();
             for (int i = 0; i < arrayLength; i++)
-                array[i] = new LineChartModel((int)(Math.random() *500), currentDate -= TimeUnit.HOURS.toMillis(4));
+                array[i] = new LineChartModel((int)(Math.random() *500), currentDate += TimeUnit.HOURS.toMillis(4));
 
 
             return array;
